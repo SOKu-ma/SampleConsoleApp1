@@ -10,7 +10,7 @@ namespace SampleConsoleApp1
         const string conFizzBuzz = "FizzBuzz";
 
         /// <summary>
-        /// 
+        /// Mainメソッド
         /// </summary>
         /// <param name="args"></param>
         public static void Main(string[] args)
