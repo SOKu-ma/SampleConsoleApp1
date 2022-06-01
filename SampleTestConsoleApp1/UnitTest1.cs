@@ -64,17 +64,21 @@ namespace SampleTestConsoleApp1
             Assert.AreEqual(FizzBuzz, ret);
         }
 
-        ///// <summary>
-        ///// 計算テスト
-        ///// </summary>
-        ///// <param name="a"></param>
-        ///// <param name="b"></param>
-        ///// <param name="c"></param>
-        //[TestCase(1, 2, 3)]
-        //[TestCase(4, 5, 9)]
-        //public void Calc_Test(int a, int b, int c)
-        //{
-        //    Assert.AreEqual(c, a + b);
-        //}
+        /// <summary>
+        /// FizzBuzzの数字以外はそのまま返す
+        /// </summary>
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(4)]
+        [TestCase(7)]
+        [TestCase(8)]
+        [TestCase(11)]
+        [TestCase(13)]
+        [TestCase(14)]
+        public void Num_FizzBuzz(int num)
+        {
+            string ret = Program.FizzBuzz(num);
+            Assert.AreEqual(num.ToString(), ret);
+        }
     }
 }
