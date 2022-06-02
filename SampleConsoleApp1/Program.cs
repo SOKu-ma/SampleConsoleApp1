@@ -2,7 +2,10 @@
 
 namespace SampleConsoleApp1
 {
-    public static class Program
+    /// <summary>
+    /// FizzBuzzクラス
+    /// </summary>
+    public static class FizzBuzz
     {
         /// 定数
         const string conFizz = "Fizz";
@@ -28,7 +31,7 @@ namespace SampleConsoleApp1
         /// 上記以外：そのままの数
         /// </remarks>
         /// <param name="num">整数値</param>
-        public static String FizzBuzz(int num)
+        public static String CheckFizzBuzz(int num)
         {
             // 15で割り切れる
             if (num % 15 == 0)

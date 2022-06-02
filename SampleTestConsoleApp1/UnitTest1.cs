@@ -10,25 +10,25 @@ namespace SampleTestConsoleApp1
     public class Tests
     {
         /// 定数
-        const string Fizz = "Fizz";
-        const string Buzz = "Buzz";
-        const string FizzBuzz = "FizzBuzz";
+        const string FIZZ = "Fizz";
+        const string BUZZ = "Buzz";
+        const string FIZZBUZZ = "FizzBuzz";
 
-        ///// <summary>
-        ///// 初期処理
-        ///// </summary>
-        //[SetUp]
-        //public void Setup()
-        //{
-        //}
+        /// <summary>
+        /// 初期処理
+        /// </summary>
+        [SetUp]
+        public void Setup()
+        {
+        }
 
-        ///// <summary>
-        ///// 終了処理
-        ///// </summary>
-        //[TearDown]
-        //public void Final()
-        //{
-        //}
+        /// <summary>
+        /// 終了処理
+        /// </summary>
+        [TearDown]
+        public void Final()
+        {
+        }
 
         /// <summary>
         /// 3で割り切れる数字はFizz
@@ -39,8 +39,8 @@ namespace SampleTestConsoleApp1
         [TestCase(12)]
         public void Num3_Fizz(int num)
         {
-            string ret = Program.FizzBuzz(num);
-            Assert.AreEqual(Fizz, ret);
+            string ret = FizzBuzz.CheckFizzBuzz(num);
+            Assert.AreEqual(FIZZ, ret);
         }
 
         /// <summary>
@@ -50,8 +50,8 @@ namespace SampleTestConsoleApp1
         [TestCase(10)]
         public void Num5_Buzz(int num)
         {
-            string ret = Program.FizzBuzz(num);
-            Assert.AreEqual(Buzz, ret);
+            string ret = FizzBuzz.CheckFizzBuzz(num);
+            Assert.AreEqual(BUZZ, ret);
         }
 
         /// <summary>
@@ -60,8 +60,8 @@ namespace SampleTestConsoleApp1
         [TestCase(15)]
         public void Num15_FizzBuzz(int num)
         {
-            string ret = Program.FizzBuzz(num);
-            Assert.AreEqual(FizzBuzz, ret);
+            string ret = FizzBuzz.CheckFizzBuzz(num);
+            Assert.AreEqual(FIZZBUZZ, ret);
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace SampleTestConsoleApp1
         [TestCase(14)]
         public void Num_FizzBuzz(int num)
         {
-            string ret = Program.FizzBuzz(num);
+            string ret = FizzBuzz.CheckFizzBuzz(num);
             Assert.AreEqual(num.ToString(), ret);
         }
     }
