@@ -5,15 +5,25 @@ namespace SampleTestConsoleApp1
 	/// <summary>
     /// 
     /// </summary>
-	public class Test2
+	public class Tests2
 	{
 		/// <summary>
         /// 
         /// </summary>
-		public Test2()
+        [SetUp]
+		public void setUp()
 		{
 
 		}
+
+		/// <summary>
+        /// 
+        /// </summary>
+		[TearDown]
+		public void Final()
+        {
+
+        }
 	}
 }
 

@@ -7,7 +7,7 @@ namespace SampleTestConsoleApp1
     /// <summary>
     /// テストクラス
     /// </summary>
-    public class Tests
+    public class Tests1
     {
         /// 定数
         const string FIZZ = "Fizz";
