@@ -18,7 +18,7 @@ namespace SampleConsoleApp1
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("FizzBuzz問題");
         }
 
         /// <summary>
