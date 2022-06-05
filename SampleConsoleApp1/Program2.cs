@@ -6,6 +6,31 @@ namespace SampleConsoleApp1
     /// </summary>
 	public static class Program2
 	{
+
+        ///// <summary>
+        ///// 提出版
+        ///// </summary>
+        //public static void TestAtCoder()
+        //{
+        //    // インプット値を取得
+        //    String str = Console.ReadLine().ToString();
+
+        //    int i = 0;
+        //    bool checkInt = int.TryParse(str, out i);
+
+        //    // 整数値の場合
+        //    if (i != 0)
+        //    {
+        //        // インプット値の2倍の数値を出力
+        //        Console.WriteLine((int.Parse(str) * 2).ToString());
+        //    }
+        //    // 数値以外（数字含む文字列も含む）の場合
+        //    else
+        //    {
+        //        Console.WriteLine("error");
+        //    }
+        //}
+
 		/// <summary>
         /// Mainメソッド
         /// </summary>
@@ -26,11 +51,11 @@ namespace SampleConsoleApp1
         {
             // 引数を判定
             // 数値の場合はそのまま
-            int i = 0;
-            bool checkInt = int.TryParse(str, out i);
+            //int i = 0;
+            bool checkInt = int.TryParse(str, out int i);
 
             // 引数が数値の場合
-            if (i != 0)
+            if (checkInt)
             {
                 return (int.Parse(str) * 2).ToString();
             }
