@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using SampleConsoleApp1;
 
-namespace SampleTestConsoleApp1
+namespace SampleTestConsoleApp2
 {
 	/// <summary>
     /// 2倍チェック問題
@@ -74,6 +74,19 @@ namespace SampleTestConsoleApp1
         {
             // 入力値の2倍と2倍チェックメソッドの返り値を比較
             Assert.AreEqual((int.Parse(strNum) * 2).ToString(), Program2.chekcNum(strNum));
+        }
+
+        /// <summary>
+        /// 正常系
+        /// </summary>
+        /// <remarks>
+        /// 0：0を出力
+        /// </remarks>
+        [TestCase("0")]
+        public void inputZero(string strNum)
+        {
+            // 入力値の2倍と2倍チェックメソッドの返り値を比較
+            Assert.AreEqual(0.ToString(), Program2.chekcNum(strNum));
         }
     }
 }
