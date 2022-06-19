@@ -14,7 +14,6 @@ namespace SampleConsoleApp1
         /// </remarks>
         public static void TestAtCoder()
         {
-
             // インプット値を取得
             String str = Console.ReadLine().ToString();
             int i = 0;
@@ -38,24 +37,6 @@ namespace SampleConsoleApp1
             {
                 Console.WriteLine("error");
             }
-
-            //// インプット値を取得
-            //String str = Console.ReadLine().ToString();
-
-            //int i = 0;
-            //bool checkInt = int.TryParse(str, out i);
-
-            //// 整数値の場合
-            //if (i != 0)
-            //{
-            //    // インプット値の2倍の数値を出力
-            //    Console.WriteLine((int.Parse(str) * 2).ToString());
-            //}
-            //// 数値以外（数字含む文字列も含む）の場合
-            //else
-            //{
-            //    Console.WriteLine("error");
-            //}
         }
 
         /// <summary>
