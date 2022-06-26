@@ -32,11 +32,11 @@ namespace SampleTestConsoleApp3
         /// <remarks>
         /// ６つの数値から3番目に大きい数値を出力
         /// </remarks>
-        [TestCase(4,18,25,20,9,13)]
-        public void increDecreMng(int a, int b, int c, int d, int e, int f)
+        [TestCase("4 18 25 20 9 13")]
+        public void TestIncreDecreMng(string strNums)
         {
-            Assert.AreEqual(Program3.Main(a,b,c,d,e,f), 13);
+            Assert.AreEqual(Program3.IncreDecreMng(strNums), 13);
         }
-	}
+    }
 }
 

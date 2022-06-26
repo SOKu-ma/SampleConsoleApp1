@@ -8,9 +8,10 @@ namespace SampleConsoleApp1
 	{
 
         /// <summary>
-        /// 提出版
+        /// 2倍チェック問題
         /// </summary>
         /// <remarks>
+        /// 提出版
         /// </remarks>
         public static void TestAtCoder()
         {
@@ -39,15 +40,6 @@ namespace SampleConsoleApp1
             }
         }
 
-        /// <summary>
-        /// Mainメソッド
-        /// </summary>
-        /// <param name="args"></param>
-        public static void Main2(string[] args)
-		{
-			Console.WriteLine("2倍チェック問題");
-		}
-
 		/// <summary>
         /// 2倍チェック問題
         /// </summary>
@@ -59,7 +51,6 @@ namespace SampleConsoleApp1
         {
             // 引数を判定
             // 数値の場合はそのまま
-            //int i = 0;
             bool checkInt = int.TryParse(str, out int i);
 
             // 引数が数値の場合
