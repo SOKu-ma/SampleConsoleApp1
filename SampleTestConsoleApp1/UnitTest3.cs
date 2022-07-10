@@ -1,6 +1,5 @@
 ﻿using SampleConsoleApp1;
 using NUnit.Framework;
-using System.Linq;
 
 namespace SampleTestConsoleApp3
 {
@@ -9,7 +8,6 @@ namespace SampleTestConsoleApp3
     /// </summary>
 	public class IncreaseDecreaseManagementTest
 	{
-
 		/// <summary>
         /// 初期処理
         /// </summary>
