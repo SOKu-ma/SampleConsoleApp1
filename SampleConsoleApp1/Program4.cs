@@ -16,16 +16,19 @@ namespace SampleConsoleApp1
         public static string checkDuplicate(List<String> GetList)
         {
 
-            List<String> list = new List<string>();
+            List<String> list = GetList;
 
-            var duplicate = list.GroupBy(l => l)
-                .Where(l => l.Count() > 1)
-                .Select(group => group.Key)
-                .ToList();
+            // リストの２番目から最後まででループ
+            for (int i = 1; i < int.Parse(list[0]); i++)
+            {
+                // リスト2個目以降の値で検索
+                if (list.FindAll(x => x == list[i]) != null)
+                {
+                    return "";
+                };
+            }
 
-            Console.WriteLine(duplicate);
-
-            return "";
+            return "Correct";
         }
     }
 }
